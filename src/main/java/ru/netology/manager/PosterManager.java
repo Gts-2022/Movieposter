@@ -4,10 +4,10 @@ public class PosterManager {
 
     private String[] movies = new String[0];
 
-    public int limit;
+    public int limit=10;
 
     public PosterManager() {//Конмтрутор без параметров неизменяемый/По умолчанию 10 фильмов
-        this.limit = 10;
+
 
     }
 
@@ -35,10 +35,10 @@ public class PosterManager {
 
     public String[] findLast() {
         int numberOfFilms;
-        if (movies.length < 10) {//Если количество фильмов меньше 10
+        if (movies.length < limit) {//Если количество фильмов меньше kbvbnf
             numberOfFilms = movies.length;//Отдает количество фильмов,сколько есть в массиве
-        } else {//Иначе 10 фильмов
-            numberOfFilms = 10;
+        } else {//Иначе количество фильмов определенное лимитом
+            numberOfFilms = limit;
         }
         String[] result = new String[numberOfFilms];//Создаём новый  массив из 10 фильмов
         for (int i = 0; i < result.length; ++i) {

@@ -6,12 +6,13 @@ public class PosterManager {
 
     public int limit;
 
-    public PosterManager(){//Конмтрутор без параметров неизменяемый/По умолчанию 10 фильмов
-        this.limit=10;
+    public PosterManager() {//Конмтрутор без параметров неизменяемый/По умолчанию 10 фильмов
+        this.limit = 10;
 
     }
-    public PosterManager(int limit){//Конструктор с задаваемым параметром /лимитом фильмов
-        this.limit=limit;
+
+    public PosterManager(int limit) {//Конструктор с задаваемым параметром /лимитом фильмов
+        this.limit = limit;
     }
 
 

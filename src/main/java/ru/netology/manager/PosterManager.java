@@ -4,9 +4,9 @@ public class PosterManager {
 
     private String[] movies = new String[0];
 
-    public int limit=10;
+    public int limit = 10;
 
-    public PosterManager() {//Конмтрутор без параметров неизменяемый/По умолчанию 10 фильмов
+    public PosterManager() {//Конструтор без параметров неизменяемый/По умолчанию 10 последних фильмов
 
 
     }
